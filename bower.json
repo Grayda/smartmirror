@@ -1,0 +1,25 @@
+{
+  "name": "smart-mirror",
+  "authors": [
+    "David Gray <grayda@solidinc.org>"
+  ],
+  "description": "Smart Mirror Software",
+  "main": "index.html",
+  "keywords": [
+    "smart",
+    "mirror"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "weather-icons": "http://github.com/auroras-live/weather-icons.git#^2.0.10"
+  }
+}

@@ -1,0 +1,7 @@
+<div class="col-xs-12">
+    <div ng-repeat="event in calendar.calendar | limitTo: config.calendar.count" class="x-large pathway">
+        <span class="ellipsis" ng-if="event.name"><i class="fa fa-fw {{ event.icon }}"></i> {{ event.name }}</span>
+        <span class="ellipsis" ng-if="event.start"> - {{ event.start | date: 'EEE hh:mma' }}</span>
+        <span class="ellipsis" ng-if="event.location"> @ {{ event.location }}</span>
+    </div>
+</div>

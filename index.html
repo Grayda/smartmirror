@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <meta name="description" content="Smart Mirror Software">
+  <meta name="author" content="davidgrayPhotography">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css">
+  <link href="css/main.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.6.1/angular-locale_en-au.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.2/justgage.min.js"></script>
+
+  <script type="text/javascript" src="bower_components/raphael/raphael.js"></script>
+  <script type="text/javascript" src="bower_components/angular-gage/dist/angular-gage.js"></script>
+
+  <script type="text/javascript" src="js/app.js" defer></script>
+  <script type="text/javascript" src="js/controllers.js" defer></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/directives.js"></script>
+  <script type="text/javascript" src="js/filters.js"></script>
+
+  <title>Smart Mirror</title>
+
+</head>
+
+<body ng-controller="main">
+  <div class="row">
+    <div ng-repeat="widget in widgets" ng-if="widget.section == 'top'" ng-include="'views/' + widget.url"></div>
+  </div>
+  <div class="row fix-bottom">
+    <div ng-repeat="widget in widgets" ng-if="widget.section == 'bottom'" ng-include="'views/' + widget.url"></div>
+  </div>
+
+</body>
+</html>

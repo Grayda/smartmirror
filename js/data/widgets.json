@@ -1,0 +1,30 @@
+[{
+    "id": "time",
+    "name": "Time & Date",
+    "url": "widgets/time.html",
+    "section": "top"
+},
+{
+    "id": "weather",
+    "name": "Weather",
+    "url": "widgets/weather.html",
+    "section": "top"
+},
+{
+    "id": "aurora",
+    "name": "Aurora Details",
+    "url": "widgets/aurora.html",
+    "section": "top"
+},
+{
+    "id": "notes",
+    "name": "Notes",
+    "url": "widgets/notes.html",
+    "section": "bottom"
+},
+{
+    "id": "calendar",
+    "name": "Calendar",
+    "url": "widgets/calendar.html",
+    "section": "bottom"
+}]

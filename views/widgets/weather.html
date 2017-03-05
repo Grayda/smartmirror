@@ -1,0 +1,26 @@
+<div class="col-xs-6 text-right pull-right-fix pathway">
+    <div class="row">
+        <h1 class="xxx-large"><i class="wi wi-owm-{{ weather.weather[0].id }}"></i> <span class="pathway">{{ weather.main.temp | number : 0 }}&deg;</span></h1>
+    </div>
+    <div class="row">
+        <h1 class="larger pathway">Moon: <i class="wi {{ moon.phase }}"></i></h1>
+    </div>
+    <div class="row pull-right">
+        <table class="weather x-large">
+            <tr ng-repeat="w in forecast.list">
+                <td>
+                    {{ w.dt * 1000 | date: 'EEE' }}
+                </td>
+                <td>
+                    <i class="wi wi-owm-{{ w.weather[0].id }} text-right"></i>
+                </td>
+                <td>
+                    {{ w.temp.min | number : 0 }}&deg;
+                </td>
+                <td>
+                    {{ w.temp.max | number : 0 }}&deg;
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+{
+    "location": {
+        "lat": "",
+        "long": ""
+    },
+    "calendar": {
+        "url": "",
+        "count": 3,
+        "start": "-1 day",
+        "end": "+10 years"
+    },
+    "weather": {
+        "appID": "",
+        "metric": true
+    },
+    "icons": [
+        {
+            "keyword": "/bins.+green/i",
+            "class": ["fa-trash-o", "text-success"]
+        }, {
+            "keyword": "/bins.+recycling/i",
+            "class": ["fa-trash-o", "text-warning"]
+        }, {
+            "keyword": "/dinner/i",
+            "class": ["fa-cutlery"]
+        }, {
+            "keyword": "/doctor/i",
+            "class": ["fa-user-md"]
+        }, {
+            "keyword": "/love.+you/i",
+            "class": ["fa-heart", "danger"]
+        }, {
+            "keyword": "/(drive|car)/i",
+            "class": ["fa-car"]
+        }, {
+            "keyword": "/melbourne/i",
+            "class": ["fa-building"]
+        }, {
+            "keyword": "/(\bcat\b|peanut)/i",
+            "class": ["fa-bullhorn"]
+        }, {
+            "keyword": "/(\bbill\b|\brent\b)/i",
+            "class": ["fa-usd", "text-danger"]
+        }
+    ]
+
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Jaldi|Pathway+Gothic+One|Roboto+Condensed:300|Roboto+Mono');
+
+body, html {
+  background: black;
+  color: white !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+}
+
+.pathway {
+    font-family: 'Pathway Gothic One', sans-serif !important;
+}
+.open-sans {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.roboto-mono {
+  font-family: 'Roboto Mono' !important;
+}
+
+svg {
+  height: auto !important;
+}
+
+.xxx-large {
+  font-size: 10vh;
+}
+
+.xx-large {
+  font-size: 5vh;
+}
+
+.x-large {
+  font-size: 4vh;
+}
+
+.larger {
+  font-size: 3vh;
+}
+
+.large {
+  font-size: 2.25vh;
+}
+
+.fix-bottom {
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+}
+
+.pull-right-fix {
+  padding-right: 3vw !important;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.weather {
+  background: none;
+}
+.weather td {
+  padding: 0 10px !important;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: lime;
+}

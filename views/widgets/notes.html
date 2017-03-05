@@ -1,0 +1,5 @@
+<div class="col-xs-12">
+    <div ng-repeat="note in calendar.notes" class="pathway text-center {{ note.class }}">
+        <span class="ellipsis x-large" ng-if="note.name"><i class="x-large fa {{ note.icon }}"></i> {{ note.name }} ({{ note.start | amTimeAgo }})</span>
+    </div>
+</div>
